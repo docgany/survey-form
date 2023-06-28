@@ -1,0 +1,123 @@
+body {
+    background-color: #ffe4e1;
+}
+
+header {
+    font-family: Roboto;
+    font-size: 26px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#survey-form {
+    background-color: #ffffff;
+    font-family: Quicksand;
+    max-width: 70%;
+    margin: auto;
+    padding: 0;
+    border-radius: 20px 40px 60px 80px;
+}
+
+#description {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 17px;
+}
+
+.fieldset {
+    border-width: 0;
+    padding-top: 1%;
+}
+
+.sub-group {
+    position: relative;
+    right: 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1%;
+}
+
+label.left {
+    width: 30%;
+    padding-right: 4%;
+    text-align: right;
+}
+
+.right {
+    width: 30%;
+}
+
+.input-field {
+    height: 20px;
+    padding: 5px;
+    border: 1px solid #c0c0c0;
+    border-radius: 2px;
+}
+
+#dropdown {
+    font-family: Quicksand;
+    height: 30px;
+    border: 1px solid #c0c0c0;
+    border-radius: 2px;
+}
+
+.checkbox {
+    position: relative;
+    padding: 3px;
+    right: 3px;
+    bottom: 15px;
+}
+
+.radio {
+    position: relative;
+    padding: 3px;
+    bottom: 15px;
+}
+
+h2 {
+    position: relative;
+    bottom: 8px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+.commentbox {
+    text-align: center;
+}
+
+textarea {
+    width: 65%;
+    border-radius: 10px;
+}
+
+#submit {
+    font-family: Roboto;
+    border-radius: 4px;
+    background: #ffe4e1;
+    font-size: 23px;
+}
+
+#submit:hover {
+    background-color: #ff7161;
+}
+
+label.left:hover {
+    cursor: pointer;
+}
+
+@media (max-width: 800px) {
+    body {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 580) {
+    body {
+        font-size: 9px;
+    }
+}

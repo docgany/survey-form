@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style1.css" type="text/css"/>
+        <link href="https://fonts.googleapis.com/css?family=Quicksand|Roboto" rel="stylesheet"/>
+        <title>Survey Form</title>
+    </head>
+    <body>
+        <header>
+            <h1>Survey Form</h1>
+        </header>
+        <form id="survey-form">
+            <div id="description">Let us know how we can improve our services</div><br>
+
+            <fieldset class="fieldset">
+
+                <div class="sub-group">
+                    <label for="name" id="name-label" class="left">*Name</label>
+                    <input type="text" id="name" name="customer-name" class="right input-field" placeholder="Enter your name" required>               
+                </div>
+                <div class="sub-group">
+                    <label for="email" id="email-label" class="left">*Email</label>
+                    <input  type="text" id="email" class="right input-field" placeholder="Enter your email " name="email-Address" required>               
+                </div>
+                <div class="sub-group">
+                    <label for="age" id="number-label" class="left">*Age</label>
+                    <input type="number" id="age" class="right input-field" placeholder="Enter Age" name="age" required>
+                </div>
+                <div class="sub-group">
+                    <label for="phone" id="phone-label" class="left">*Phone Number</label>
+                    <input type="text" id="phone" class="right input-field" placeholder="Enter Phone Number" name="phone-number" required>
+                </div>
+                <div class="sub-group">
+                    <label for="drop-down" class="left">*Which option best describes you?</label> 
+                    <select id="drop-down" name="drop-down" class="right drop-down">
+                        <option selected disabled>Select an option</option>
+                        <option value="student">Student</option>
+                        <option value="intern">Intern</option>
+                        <option value="professional">Professional</option>
+                    </select>            
+                </div>
+            </fieldset>
+
+            <fieldset class="fieldset">
+                <div class="sub-group">
+                    <label class="left">*Which programming language have you learnt?</label>
+                    <ul style="list-style: none;" class="right">
+                        <li class="checkbox">
+                            <label><input type="checkbox" name="language" value="python">Python</label>
+                        </li>
+                        <li class="checkbox">
+                            <label><input type="checkbox" name="language" value="javascript">Javascript</label>
+                        </li>
+                        <li class="checkbox">
+                            <label><input type="checkbox" name="language" value="java">Java</label>
+                        </li>
+                        <li class="checkbox">
+                            <label><input type="checkbox" name="=language" value="react">React</label>
+                        </li>
+                        <li class="checkbox">
+                            <label><input type="checkbox" name="language" value="django">Django</label>
+                        </li>
+                        <li class="checkbox">
+                            <label><input type="checkbox" name="language" value="angular">Angular</label>
+                        </li>
+                        <li class="checkbox">
+                            <label><input type="checkbox" name="language" value="spring">Spring</label>
+                        </li>
+                        <li class="checkbox">
+                            <label><input type="checkbox" name="language" valu="c+">C+</label>
+                        </li>
+                        <li class="checkbox">
+                            <label><input type="checkbox" name="language" value="c#">C#</label>
+                        </li>
+                    </ul>
+                </div>
+            </fieldset>
+
+            <fieldset class="fieldset">
+                <div class="sub-group">
+                    <label class="left" id="left-radio">Will you recommend any programming language to your friends?</label>
+                    <ul style="list-style: none;" class="right">
+                        <li class="radio">
+                            <label><input type="radio" name="radio-buttons" value="1">Yes</label>
+                        </li>
+                        <li class="radio">
+                            <label><input type="radio" name="radio-buttons" value="2">No</label>
+                        </li>
+                        <li class="radio">
+                            <label><input type="radio" name="radio-buttons" value="3">Maybe</label>
+                        </li>
+                    </ul>
+                </div>
+            </fieldset>
+
+            <fieldset class="fieldset">
+                <h2>Any comments or suggestions</h2>
+                <div class="commentbox">
+                    <textarea placeholder="Enter your comment here..." rows="4"></textarea>
+                    <br><br>
+                    <button id="submit" type="submit">Submit</button>
+                </div>
+            </fieldset>
+
+
+        </form>
+        
+    </body>
+</html>
